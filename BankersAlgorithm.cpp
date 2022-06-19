@@ -28,6 +28,7 @@ using std::endl;
  void showResult();
  void request();
  
+ 
 int main(){
  cout << "Enter the number of resources of each type:\n";
     for(int i = 0; i < m; i++){
@@ -47,13 +48,7 @@ int main(){
             cin >> alloc[i][j];
         }
     }
- 
-    for(int i = 0; i < n; i++){
-        for(int j = 0; j < m; j++){
-            need[i][j] = max[i][j] - alloc[i][j];
-            avail[j] -= alloc[i][j];
-        }
-    }
+
     
  cal();
  showResult();
@@ -61,8 +56,6 @@ int main(){
 
     return (0);
 }
-
-
 
 
 bool cal(){
@@ -108,14 +101,13 @@ bool cal(){
     
 void showResult(){
 	if(sizeof(safeSeq)/sizeof(safeSeq[0])){
-		printf("\n The system is in safe state.\n");
-        printf(" -Following is the SAFE Sequence: \n");
+		printf(" 0\n");
         for (int i = 0; i < n - 1; i++) {
             printf(" Thread%d , ", safeSeq[i]);
 		}
         printf(" Thread%d\n", safeSeq[n - 1]);
     }else{
-    	printf("\n The following system is not safe.\n");
+    	printf(" -1\n");
     	printf(" -No SAFE Sequence-\n");
 	}
 }
@@ -123,19 +115,20 @@ void showResult(){
 
 void request(){
 	int resp, pid, request[5][3], i;
+	
     printf("\n Do you want make an additional request for any of the process ? (1=Yes|0=No) ");
     scanf("%d", &resp);
     
     if (resp == 1) {
-        printf("\n Enter request such as : (process_number  Request_resource_1  Request_resource_2  Request_resource_3)\n ");
+        printf(" Enter request such as : (process_number  Request_resource_1  Request_resource_2  Request_resource_3)\n\n ");
         scanf("\n%d %d %d %d", &pid,&request[0][0],&request[0][1],&request[0][2]);
     
         
         for (i = 0; i < m; i++) {
             if (request[0][i] > need[pid][i]) {
-            	
-            	printf("\n -1\n");
-                exit(0);
+            	printf(" -1\n");
+            	printf(" -No SAFE Sequence-\n");
+                break;
                 
             }else {
             	
@@ -147,16 +140,14 @@ void request(){
                     }   
                     
                     if (cal() == true){
-                    	printf("\n 0\n");
                     	showResult();
 					}
 				}
 			}     
         }
 	} 
-	else {	
+	else{	
         exit(0);
     }
 }
-
 
