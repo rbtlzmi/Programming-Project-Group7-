@@ -12,6 +12,8 @@ Aneesa Nadira Binti Aminuddin         2016174
 Rabiatul Adawiyah Binti Mohammad Azmi 2013214
 ```
 
+*Lecturer Dr. Rizal Bin Mohd. Nor*
+
 ## Banker's Algorithm
 
 The program reads the information user input. The inputs are number of resources of each type, the maximum matrix, the current allocation matrix, and the request matrix.
