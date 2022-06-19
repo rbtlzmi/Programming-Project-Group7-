@@ -23,7 +23,7 @@
 // output -> 0
 
 //second request input
-4  3  3  0
+1  10  10  10
 //output -> -1
 
 //third request input
