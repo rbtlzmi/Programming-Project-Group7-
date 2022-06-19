@@ -17,7 +17,7 @@
 0 0 2
 
 
-//Sample input for question 5:
+//Sample input for resource request:
 //first request input
 1  1  0  2
 
