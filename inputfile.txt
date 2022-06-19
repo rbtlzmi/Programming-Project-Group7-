@@ -20,9 +20,12 @@
 //Sample input for resource request:
 //first request input
 1  1  0  2
+// output -> 0
 
 //second request input
 4  3  3  0
+//output -> -1
 
 //third request input
 0  0  0  0
+//output -> 0
