@@ -16,6 +16,11 @@ Rabiatul Adawiyah Binti Mohammad Azmi 2013214
 
 The program reads the information user input. The inputs are number of resources of each type, the maximum matrix, the current allocation matrix, and the request matrix.
 
+__Sample input for number of resources of each type :__
+```
+10 5 7
+```
+
 __Sample input for maximum matrix :__
 ```
 7 5 3
@@ -23,6 +28,14 @@ __Sample input for maximum matrix :__
 9 0 2
 2 2 2
 4 3 3
+```
+__Sample input for allocation matrix :__
+```
+0 1 0
+2 0 0
+3 0 2
+2 1 1
+0 0 2
 ```
 
 All fields on a line are separated by whitespace.
