@@ -16,6 +16,15 @@ Rabiatul Adawiyah Binti Mohammad Azmi 2013214
 
 The program reads the information user input. The inputs are number of resources of each type, the maximum matrix, the current allocation matrix, and the request matrix.
 
+__Sample input for maximum matrix :__
+```
+7 5 3
+3 2 2
+9 0 2
+2 2 2
+4 3 3
+```
+
 All fields on a line are separated by whitespace.
 
 The first input is line of the input file contains three integers,  number of resources of each type. The next input contains the maximum matrix. The next input contain the data for the current allocation matrix (first row, followed by the second row, and so on). There must be one line for each process in this matrix. The final set of input contain the data for the request matrix if the user choose to request for additional request. 
