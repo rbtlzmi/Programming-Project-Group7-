@@ -2,13 +2,15 @@
 
 ### Group members : 
 
-- Muhammad Muhaimin Bin Mazni (leader)  1917953
+```
+Muhammad Muhaimin Bin Mazni (leader)  1917953
 
-- Muhammad Nasrullah Bin Mat Radzi      2013677 
+Muhammad Nasrullah Bin Mat Radzi      2013677 
 
-- Aneesa Nadira Binti Aminuddin         2016174
+Aneesa Nadira Binti Aminuddin         2016174
 
-- Rabiatul Adawiyah Binti Mohammad Azmi 2013214
+Rabiatul Adawiyah Binti Mohammad Azmi 2013214
+```
 
 ## Banker's Algorithm
 
