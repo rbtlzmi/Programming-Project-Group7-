@@ -19,19 +19,10 @@
 
 //Sample input for question 5:
 //first request input
-1 
-1 
-0 
-2
+1  1  0  2
 
 //second request input
-4 
-3 
-3 
-0
+4  3  3  0
 
 //third request input
-0 
-0 
-0 
-0
+0  0  0  0
